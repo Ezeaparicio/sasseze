@@ -1,11 +1,16 @@
+@mixin fonts( $fonS,$fontW,$color)
+{ 	
+	font-size:$fonS;
+	font-weight:$fontW;
+	color:$color;
+}
+
 #menu {
 	a {
-		font: size 18px;
-		font-weight: bold;
-		color: $color_1;
+		@include fonts (18px, bold , $color_1 )
 	}
 	button {
-		font-size: 18px;
-		font-weight: bold;
+		@include fonts(18px ,bold, none )
 	}
 }
+

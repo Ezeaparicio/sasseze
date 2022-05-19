@@ -1,3 +1,5 @@
+
+
 .carousel-inner {
 	max-height: 100%;
 	max-width: 100%;
@@ -5,11 +7,10 @@
 main {
 	width: 100%;
 }
-h2 {
-	color: $color_2;
+h2{ color: $color_2;
 	font-size: 26px;
 	font-weight: 300;
-	text-align: center;
+	text-align: center; 
 	text-transform: uppercase;
 	position: relative;
 	margin: 30px 0 80px;
@@ -24,6 +25,7 @@ h2 {
 		right: 0;
 		bottom: -20px;
 	}
+
 }
 
 .carousel {
@@ -122,30 +124,12 @@ h2 {
 		color: $color_5;
 		text-shadow: none;
 		font-weight: bold;
-		margin-left: -3px;
 	}
 }
 .carousel-control-next {
-	height: 100px;
-	width: 40px;
-	background: none;
-	margin: auto 0;
-	background: rgba(0, 0, 0, 0.2);
-	i {
-		font-size: 30px;
-		position: absolute;
-		top: 50%;
-		display: inline-block;
-		margin: -16px 0 0 0;
-		z-index: 5;
-		left: 0;
-		right: 0;
-		color: $color_5;
-		text-shadow: none;
-		font-weight: bold;
-		margin-right: -3px;
-	}
+@extend .carousel-control-prev
 }
+
 .carousel-indicators {
 	li {
 		width: 10px;
@@ -157,13 +141,8 @@ h2 {
 		background: rgba(0, 0, 0, 0.2);
 	}
 	li.active {
-		width: 10px;
-		height: 10px;
-		margin: 4px;
-		border-radius: 50%;
-		border-color: $border-color_2;
-		border: none;
-		background: rgba(0, 0, 0, 0.6);
+	@extend .carousel-indicators
+
 	}
 }
 

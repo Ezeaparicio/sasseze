@@ -1,11 +1,12 @@
 #menu a {
-  font: size 18px;
+  font-size: 18px;
   font-weight: bold;
   color: #3f3f3f; }
 
 #menu button {
   font-size: 18px;
-  font-weight: bold; }
+  font-weight: bold;
+  color: none; }
 
 .carousel-inner {
   max-height: 100%;
@@ -94,16 +95,16 @@ h2 {
     .carousel .item-price span {
       color: #86bd57;
       font-size: 110%; }
-  .carousel .carousel-indicators {
+  .carousel .carousel-indicators, .carousel .carousel-indicators li.active, .carousel-indicators .carousel li.active {
     bottom: -50px; }
 
-.carousel-control-prev {
+.carousel-control-prev, .carousel-control-next {
   height: 100px;
   width: 40px;
   background: none;
   margin: auto 0;
   background: rgba(0, 0, 0, 0.2); }
-  .carousel-control-prev i {
+  .carousel-control-prev i, .carousel-control-next i {
     font-size: 30px;
     position: absolute;
     top: 50%;
@@ -114,30 +115,9 @@ h2 {
     right: 0;
     color: rgba(0, 0, 0, 0.8);
     text-shadow: none;
-    font-weight: bold;
-    margin-left: -3px; }
+    font-weight: bold; }
 
-.carousel-control-next {
-  height: 100px;
-  width: 40px;
-  background: none;
-  margin: auto 0;
-  background: rgba(0, 0, 0, 0.2); }
-  .carousel-control-next i {
-    font-size: 30px;
-    position: absolute;
-    top: 50%;
-    display: inline-block;
-    margin: -16px 0 0 0;
-    z-index: 5;
-    left: 0;
-    right: 0;
-    color: rgba(0, 0, 0, 0.8);
-    text-shadow: none;
-    font-weight: bold;
-    margin-right: -3px; }
-
-.carousel-indicators li {
+.carousel-indicators li, .carousel-indicators li.active li {
   width: 10px;
   height: 10px;
   margin: 4px;
@@ -145,15 +125,6 @@ h2 {
   border-color: transparent;
   border: none;
   background: rgba(0, 0, 0, 0.2); }
-
-.carousel-indicators li.active {
-  width: 10px;
-  height: 10px;
-  margin: 4px;
-  border-radius: 50%;
-  border-color: transparent;
-  border: none;
-  background: rgba(0, 0, 0, 0.6); }
 
 .bigicon {
   font-size: 35px;
