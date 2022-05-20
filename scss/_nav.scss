@@ -7,7 +7,7 @@
 
 #menu {
 	a {
-		@include fonts (18px, bold , $color_1 )
+		@include fonts (18px, bold , map-get($map: $palette, $key: 'color_1') )
 	}
 	button {
 		@include fonts(18px ,bold, none )

@@ -3,7 +3,7 @@
 	background-color: $background-color_1;
 }
 footer {
-	color: $color_9;
+	color: map-get($map: $palette, $key: 'color_9');
 	h3 {
 		margin-bottom: 30px;
 		font-weight: 800;
@@ -22,7 +22,7 @@ footer {
 	ul {
 		li {
 			a {
-				color: $color_10;
+				color: map-get($map: $palette, $key: 'color_10');
 			}
 		}
 	}
