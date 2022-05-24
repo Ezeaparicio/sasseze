@@ -93,7 +93,7 @@ h2{ color: map-get($map: $palette, $key: 'color_2');
 	.item-price {
 		font-size: 13px;
 		padding: 2px 0;
-		strike {
+		del {
 			color:map-get($map: $palette, $key: 'color_6');
 			margin-right: 5px;
 		}
