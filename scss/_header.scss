@@ -1,0 +1,23 @@
+.contenedor{ 
+    position: relative;
+    display: inline-block;
+    text-align: center; }
+
+.imagen{ 
+        position: relative;
+        width:10em;
+        height:10em;
+        overflow:hidden;
+        border: 10px;;
+        border-radius: 50%;
+        background-color: #fff;
+        padding: 5px;
+        -webkit-border-radius: 150px;
+        -moz-border-radius: 150px;
+}
+
+.texto-encima{
+    position:static;
+    top: 10px;
+    left: 10px;
+}
